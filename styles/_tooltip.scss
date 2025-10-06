@@ -1,0 +1,32 @@
+.tooltip {
+  position: fixed;
+  background: linear-gradient(135deg, $bg-tertiary 0%, $bg-card 100%);
+  border: 1px solid $border-color;
+  color: $text-primary;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  font-size: $font-size-sm;
+  max-width: 300px;
+  z-index: $z-tooltip;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity $transition-fast;
+  box-shadow: $shadow-lg, 0 0 20px rgba(167, 139, 250, 0.2);
+
+  &.active {
+    opacity: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $bg-tertiary;
+  }
+}

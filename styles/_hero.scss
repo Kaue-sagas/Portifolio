@@ -1,0 +1,91 @@
+.hero {
+  padding: $spacing-4xl 0;
+  background: $metallic-gradient;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, rgba(192, 132, 252, 0.08) 40%, transparent 70%);
+    animation: rotate 20s linear infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+  }
+
+  @include respond-to('md') {
+    padding: 6rem 0;
+  }
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: $font-size-4xl;
+    font-weight: 800;
+    margin-bottom: $spacing-md;
+    color: $text-primary;
+    text-shadow: 0 0 40px rgba(167, 139, 250, 0.5);
+    background: linear-gradient(135deg, $text-primary 0%, $primary-light 50%, $accent 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @include respond-to('md') {
+      font-size: $font-size-5xl;
+    }
+  }
+
+  &__subtitle {
+    font-size: $font-size-xl;
+    color: $primary-light;
+    margin-bottom: $spacing-lg;
+    text-shadow: 0 0 25px rgba(167, 139, 250, 0.4);
+  }
+
+  &__description {
+    font-size: $font-size-lg;
+    color: $text-secondary;
+    line-height: 1.8;
+    margin-bottom: $spacing-2xl;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__cta {
+    display: flex;
+    gap: $spacing-lg;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

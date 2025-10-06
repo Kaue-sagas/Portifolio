@@ -1,0 +1,91 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $z-modal;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-lg;
+
+  &.active {
+    display: flex;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 90vh;
+    background: $metallic-gradient-card;
+    border: 1px solid $border-color;
+    border-radius: $radius-xl;
+    overflow: hidden;
+    box-shadow: $shadow-xl, $shadow-glow-purple;
+    animation: modalSlideIn $transition-base;
+  }
+
+  &__close {
+    @include button-reset;
+    position: absolute;
+    top: $spacing-lg;
+    right: $spacing-lg;
+    width: 40px;
+    height: 40px;
+    @include flex-center;
+    background: linear-gradient(135deg, $bg-tertiary 0%, $bg-card 100%);
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    font-size: $font-size-2xl;
+    color: $text-primary;
+    box-shadow: $shadow-md;
+    transition: all $transition-fast;
+    z-index: 10;
+
+    &:hover {
+      background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+      color: white;
+      transform: rotate(90deg);
+      box-shadow: $shadow-glow;
+      border-color: $primary;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    height: 90vh;
+    overflow-y: auto;
+    padding: $spacing-2xl;
+  }
+
+  &__placeholder {
+    @include flex-center;
+    min-height: 400px;
+    font-size: $font-size-xl;
+    color: $text-secondary;
+    text-align: center;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

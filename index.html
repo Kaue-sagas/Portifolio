@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Kauê Feltrin Sagas - Desenvolvedor Full Stack">
+    <title>Kauê Feltrin Sagas | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__logo">Kauê Feltrin</h1>
+                <nav class="header__nav">
+                    <a href="#projetos" class="header__link">Projetos</a>
+                    <a href="#curriculo" class="header__link">Currículo</a>
+                    <a href="#contato" class="header__link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h2 class="hero__title">Desenvolvedor Full Stack</h2>
+                <p class="hero__subtitle">17 anos | Navegantes, SC</p>
+                <p class="hero__description">
+                    Estudante de Desenvolvimento de Sistemas no SENAI, apaixonado por criar 
+                    soluções web inovadoras. Inglês fluente e experiência em projetos full stack.
+                </p>
+                <div class="hero__cta">
+                    <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+                    <a href="#curriculo" class="btn btn--secondary">Meu Currículo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section__title">Meus Projetos</h2>
+            <p class="section__subtitle">Projetos desenvolvidos durante minha jornada de aprendizado</p>
+            
+            <div class="projects__grid">
+                <!-- Project 1: Pixar -->
+                <article class="project-card" data-project="pixar">
+                    <div class="project-card__image">
+                        <img src="images/project-pixar-preview.jpg" alt="Preview do projeto Os Incríveis">
+                        <div class="project-card__overlay">
+                            <button class="project-card__btn">Ver Projeto</button>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Os Incríveis - Pixar</h3>
+                        <p class="project-card__description">
+                            Meu segundo site, onde criei um método de login usando arquivo TXT 
+                            pois ainda não sabia back-end. Site de estudo com tema dos Incríveis da Pixar.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: ScrollUP -->
+                <article class="project-card" data-project="scrollup">
+                    <div class="project-card__image">
+                        <img src="images/project-scrollup-preview.jpg" alt="Preview do projeto ScrollUP">
+                        <div class="project-card__overlay">
+                            <button class="project-card__btn">Ver Projeto</button>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">ScrollUP - Leitura de Mangás</h3>
+                        <p class="project-card__description">
+                            Site de estudo para leitura de mangás e webtoons. Foco em aprender 
+                            Flexbox, organização de código e criar um design bonito e agradável.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Flexbox</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: WeddingEasy -->
+                <article class="project-card" data-project="weddingeasy">
+                    <div class="project-card__image">
+                        <img src="images/project-wedding-preview.jpg" alt="Preview do projeto WeddingEasy">
+                        <div class="project-card__overlay">
+                            <button class="project-card__btn">Ver Projeto</button>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">WeddingEasy - Finalista DSPI 2025</h3>
+                        <p class="project-card__description">
+                            Sistema de gerenciamento de casamentos interativo com design moderno. 
+                            Trabalhei no design, HTML, CSS e PHP. Projeto finalista no DSPI 2025.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="curriculo" class="resume">
+        <div class="container">
+            <h2 class="section__title">Currículo</h2>
+            <p class="section__subtitle">Passe o mouse sobre os itens para ver mais detalhes</p>
+
+            <div class="resume__grid">
+                <!-- Hard Skills -->
+                <div class="resume__section">
+                    <h3 class="resume__section-title">Hard Skills</h3>
+                    
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Linguagens</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Linguagem de programação server-side para desenvolvimento web">
+                                <span class="resume__item-name">PHP</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Linguagem de programação para web, essencial para interatividade">
+                                <span class="resume__item-name">JavaScript</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Superset do JavaScript com tipagem estática">
+                                <span class="resume__item-name">TypeScript</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Linguagem orientada a objetos, robusta e multiplataforma">
+                                <span class="resume__item-name">Java</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Linguagem de marcação para estruturação de dados">
+                                <span class="resume__item-name">XML</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Linguagem para gerenciamento de bancos de dados relacionais">
+                                <span class="resume__item-name">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Ferramentas & Frameworks</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Controle de versão e colaboração em projetos">
+                                <span class="resume__item-name">Git/GitHub</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Ferramenta de design e prototipação de interfaces">
+                                <span class="resume__item-name">Figma</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Framework TypeScript para aplicações web">
+                                <span class="resume__item-name">Angular</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Técnica para requisições assíncronas sem recarregar a página">
+                                <span class="resume__item-name">Ajax</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Framework CSS utility-first para desenvolvimento rápido">
+                                <span class="resume__item-name">Tailwind</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Sistema de gerenciamento de banco de dados relacional">
+                                <span class="resume__item-name">MySQL</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Interface web para administração de bancos MySQL">
+                                <span class="resume__item-name">PhpMyAdmin</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Pacote de aplicativos de produtividade da Microsoft">
+                                <span class="resume__item-name">Office 365</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Capacidades</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Habilidade de resolver problemas complexos de forma estruturada">
+                                <span class="resume__item-name">Pensamento Lógico</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Eficiência na entrega de resultados com qualidade">
+                                <span class="resume__item-name">Produtividade</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Capacidade de identificar e solucionar problemas técnicos">
+                                <span class="resume__item-name">Resolução de Problemas</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Habilidade de revisar e entender código de terceiros">
+                                <span class="resume__item-name">Análise de Código</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="resume__section">
+                    <h3 class="resume__section-title">Soft Skills</h3>
+                    
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Comportamento</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Capacidade de manter a compostura em situações de pressão">
+                                <span class="resume__item-name">Manter a Calma</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Tratamento profissional e cordial com colegas e clientes">
+                                <span class="resume__item-name">Respeito</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Criar um ambiente de trabalho positivo e colaborativo">
+                                <span class="resume__item-name">Ambiente Leve</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Comunicação clara e efetiva com a equipe">
+                                <span class="resume__item-name">Comunicação Natural</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Abertura para feedback e crescimento profissional">
+                                <span class="resume__item-name">Aceito Críticas</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Busca constante por aprimoramento e excelência">
+                                <span class="resume__item-name">Melhoria Contínua</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Forma de Trabalho</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Colaboração efetiva e sinergia com membros da equipe">
+                                <span class="resume__item-name">Trabalho em Equipe</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Capacidade de guiar e inspirar colegas de trabalho">
+                                <span class="resume__item-name">Visão de Liderança</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Proatividade em sugerir otimizações e soluções">
+                                <span class="resume__item-name">Recomendar Melhorias</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Empatia para entender necessidades do usuário final">
+                                <span class="resume__item-name">Visão do Cliente</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Organização</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Gestão eficiente de tarefas e responsabilidades pessoais">
+                                <span class="resume__item-name">Organização Pessoal</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Estruturação clara de documentação e arquivos">
+                                <span class="resume__item-name">Organização de Documentos</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Cumprimento consistente de deadlines estabelecidos">
+                                <span class="resume__item-name">Manejo de Prazos</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Estrutura de código limpa e bem organizada">
+                                <span class="resume__item-name">Organização de Arquivos</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Expressão clara de ideias e informações técnicas">
+                                <span class="resume__item-name">Clareza na Comunicação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Courses -->
+                <div class="resume__section">
+                    <h3 class="resume__section-title">Formação & Cursos</h3>
+                    
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Formação Acadêmica</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Cursando 3º ano - Conclusão prevista para 2025">
+                                <span class="resume__item-name">Ensino Médio</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="SENAI - Conclusão prevista para dezembro de 2025">
+                                <span class="resume__item-name">Desenvolvedor de Sistemas</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="7 anos de curso - Concluído em 2023">
+                                <span class="resume__item-name">Wizard Navegantes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Cursos Complementares</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Curso completo de JavaScript e TypeScript moderno">
+                                <span class="resume__item-name">JavaScript e TypeScript</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Desenvolvimento back-end com PHP">
+                                <span class="resume__item-name">PHP</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Framework TypeScript para aplicações web">
+                                <span class="resume__item-name">Angular</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Programação orientada a objetos com Java">
+                                <span class="resume__item-name">Java</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Fundamentos de desenvolvimento web front-end">
+                                <span class="resume__item-name">HTML e CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Idiomas</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Fluência completa em inglês - 7 anos de estudo na Wizard">
+                                <span class="resume__item-name">Inglês Fluente</span>
+                            </div>
+                            <div class="resume__item" data-tooltip="Nível intermediário de espanhol">
+                                <span class="resume__item-name">Espanhol Intermediário</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume__category">
+                        <h4 class="resume__category-title">Experiência</h4>
+                        <div class="resume__items">
+                            <div class="resume__item" data-tooltip="Programa de aprendizagem profissional - Setembro 2025">
+                                <span class="resume__item-name">Jovem Aprendiz (Portonave)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section__title">Entre em Contato</h2>
+            <div class="contact__grid">
+                <div class="contact__item">
+                    <h3 class="contact__title">Email</h3>
+                    <a href="mailto:kauekfs@hotmail.com" class="contact__link">kauekfs@hotmail.com</a>
+                </div>
+                <div class="contact__item">
+                    <h3 class="contact__title">Telefone</h3>
+                    <a href="tel:+5547991149148" class="contact__link">(47) 9 9114-9148</a>
+                </div>
+                <div class="contact__item">
+                    <h3 class="contact__title">GitHub</h3>
+                    <a href="https://github.com/Kaue-sagas" target="_blank" class="contact__link">Kaue-sagas</a>
+                </div>
+                <div class="contact__item">
+                    <h3 class="contact__title">Localização</h3>
+                    <p class="contact__text">São Pedro, Navegantes - SC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2025 Kauê Feltrin Sagas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div class="modal__body">
+                <!-- O conteúdo do projeto será inserido aqui via JavaScript -->
+                <div id="projectContent">
+                    <p class="modal__placeholder">Adicione o conteúdo do seu projeto aqui</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

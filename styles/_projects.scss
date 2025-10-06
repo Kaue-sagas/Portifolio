@@ -1,0 +1,134 @@
+.projects {
+  padding: $spacing-4xl 0;
+  background-color: $bg-primary;
+  position: relative;
+  z-index: 2;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-2xl;
+
+    @include respond-to('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.project-card {
+  background: $metallic-gradient-card;
+  border: 1px solid $border-color;
+  border-radius: $radius-xl;
+  overflow: hidden;
+  box-shadow: $shadow-lg;
+  transition: all $transition-base;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: $metallic-shine;
+    transition: left $transition-slow;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-12px);
+    box-shadow: $shadow-glow-purple;
+    border-color: $primary;
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(135deg, $bg-secondary 0%, $bg-tertiary 100%);
+    border-bottom: 1px solid $border-color;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform $transition-slow;
+      opacity: 0.9;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 10, 15, 0.95) 0%, rgba(26, 22, 37, 0.95) 100%);
+    @include flex-center;
+    opacity: 0;
+    transition: opacity $transition-base;
+    z-index: 2;
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+  }
+
+  &:hover &__image img {
+    transform: scale(1.1);
+  }
+
+  &__btn {
+    @include button-reset;
+    padding: $spacing-md $spacing-xl;
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+    color: white;
+    font-weight: 600;
+    border-radius: $radius-lg;
+    transition: all $transition-base;
+    box-shadow: $shadow-glow;
+
+    &:hover {
+      box-shadow: $shadow-glow-strong;
+      transform: scale(1.05);
+    }
+  }
+
+  &__content {
+    padding: $spacing-xl;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: $font-size-xl;
+    font-weight: 700;
+    margin-bottom: $spacing-md;
+    color: $text-primary;
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    color: $text-secondary;
+    line-height: 1.6;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+  }
+}
