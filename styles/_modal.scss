@@ -44,7 +44,8 @@
     right: $spacing-lg;
     width: 40px;
     height: 40px;
-    @include flex-center;
+    display: flex;
+    justify-content: center;
     background: linear-gradient(135deg, $bg-tertiary 0%, $bg-card 100%);
     border: 1px solid $border-color;
     border-radius: 50%;
@@ -84,6 +85,7 @@
     opacity: 0;
     transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

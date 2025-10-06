@@ -1,23 +1,23 @@
 // Colors - Metallic Dark Mode with Purple Accents
-$primary: #a78bfa;        // Purple primary
-$primary-dark: #8b5cf6;   // Darker purple
-$primary-light: #c4b5fd;  // Lighter purple
+$primary: #8ba9fa;        // Purple primary
+$primary-dark: #5cacf6;   // Darker purple
+$primary-light: #b5c8fd;  // Lighter purple
 $secondary: #94a3b8;      // Steel gray
-$accent: #c084fc;         // Bright purple accent
-$accent-blue: #60a5fa;    // Blue accent for variety
+$accent: #84b4fc;         // Bright purple accent
+$accent-blue: #60a3fa;    // Blue accent for variety
 
 $text-primary: #f1f5f9;
 $text-secondary: #cbd5e1;
 $text-light: #94a3b8;
 $text-muted: #64748b;
 
-$bg-primary: #0a0a0f;     // Deep metallic black
-$bg-secondary: #13111c;   // Dark purple-tinted metallic
-$bg-tertiary: #1a1625;    // Purple-gray metallic
-$bg-card: #151320;        // Card background with purple tint
+$bg-primary: #0a0b0f;     
+$bg-secondary: #11141c;   
+$bg-tertiary: #161b25;    
+$bg-card: #131820;        
 
-$border-color: #2d2640;   // Purple-tinted border
-$border-light: #3d3450;   // Lighter purple border
+$border-color: #262f40;   
+$border-light: #343d50;   
 
 // Typography
 $font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -60,15 +60,15 @@ $shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
 $shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 $shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
 $shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
-$shadow-glow: 0 0 20px rgba(167, 139, 250, 0.3), 0 0 40px rgba(167, 139, 250, 0.1);
-$shadow-glow-strong: 0 0 30px rgba(167, 139, 250, 0.5), 0 0 60px rgba(167, 139, 250, 0.2);
-$shadow-glow-purple: 0 0 25px rgba(192, 132, 252, 0.4), 0 0 50px rgba(192, 132, 252, 0.15);
+$shadow-glow: 0 0 20px rgba(139, 169, 250, 0.3), 0 0 40px rgba(139, 169, 250, 0.1);
+$shadow-glow-strong: 0 0 30px rgba(139, 174, 250, 0.5), 0 0 60px rgba(139, 165, 250, 0.2);
+$shadow-glow-purple: 0 0 25px rgba(132, 164, 252, 0.4), 0 0 50px rgba(132, 150, 252, 0.15);
 
 // Metallic gradients
 $metallic-gradient: linear-gradient(135deg, #1a1625 0%, #0a0a0f 50%, #13111c 100%);
 $metallic-gradient-card: linear-gradient(135deg, #151320 0%, #1a1625 100%);
-$metallic-shine: linear-gradient(90deg, transparent 0%, rgba(167, 139, 250, 0.15) 50%, transparent 100%);
-$metallic-border: linear-gradient(135deg, rgba(167, 139, 250, 0.3) 0%, rgba(192, 132, 252, 0.2) 100%);
+$metallic-shine: linear-gradient(90deg, transparent 0%, rgba(139, 174, 250, 0.15) 50%, transparent 100%);
+$metallic-border: linear-gradient(135deg, rgba(139, 169, 250, 0.3) 0%, rgba(132, 160, 252, 0.2) 100%);
 
 // Transitions
 $transition-fast: 150ms ease-in-out;

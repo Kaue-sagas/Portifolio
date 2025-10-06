@@ -1,4 +1,3 @@
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -12,28 +11,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Project Modal
 const modal = document.getElementById("projectModal")
 const modalOverlay = modal.querySelector(".modal__overlay")
 const modalClose = modal.querySelector(".modal__close")
 const projectCards = document.querySelectorAll(".project-card")
 const projectContent = document.getElementById("projectContent")
 
-// Project data (você pode adicionar o conteúdo dos seus projetos aqui)
 const projectData = {
   pixar: {
     title: "Os Incríveis - Pixar",
     content: `
       <h2>Os Incríveis - Site de Estudo</h2>
       <p>Este foi meu segundo site, onde aprendi muito sobre desenvolvimento web.</p>
-      <p>Criei um sistema de login inovador usando arquivo TXT, pois ainda não tinha conhecimento de back-end.</p>
-      <p><strong>Adicione aqui o iframe ou imagens do seu projeto!</strong></p>
-      <div style="background: #f1f5f9; padding: 2rem; border-radius: 0.5rem; margin-top: 1rem;">
-        <p style="text-align: center; color: #64748b;">
-          Espaço reservado para o conteúdo do projeto Pixar<br>
-          Você pode adicionar iframes, imagens ou vídeos aqui
-        </p>
+      <p>Criei um sistema de login diferente usando arquivo TXT, pois ainda não tinha conhecimento de back-end.</p>
+      <p style="margin-bottom: 1rem;"><strong>Um preview da Landing Page:</strong></p>
+      <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.15);">
+        <img src="images/theincredibles_light.png" alt="Preview do projeto Os Incríveis">
       </div>
+      
     `,
   },
   scrollup: {
@@ -41,35 +36,28 @@ const projectData = {
     content: `
       <h2>ScrollUP - Plataforma de Leitura</h2>
       <p>Site desenvolvido para estudo de leitura de mangás e webtoons.</p>
-      <p>Foco principal em aprender Flexbox, organização de código e criar interfaces agradáveis.</p>
-      <p><strong>Adicione aqui o iframe ou imagens do seu projeto!</strong></p>
-      <div style="background: #f1f5f9; padding: 2rem; border-radius: 0.5rem; margin-top: 1rem;">
-        <p style="text-align: center; color: #64748b;">
-          Espaço reservado para o conteúdo do projeto ScrollUP<br>
-          Você pode adicionar iframes, imagens ou vídeos aqui
-        </p>
+      <p>Foco principal em aprender Flexbox e variaveis, organização de código e criar interfaces agradáveis.</p>
+      <p style="margin-bottom: 1rem;"><strong>Um preview da Landing Page:</strong></p>
+      <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(150, 192, 255, 0.4), 0 0 50px rgba(116, 153, 255, 0.15);">
+        <img src="images/scrollup.png" alt="Preview do projeto ScrollUp">
       </div>
     `,
   },
   weddingeasy: {
-    title: "WeddingEasy - Sistema de Casamentos",
+    title: "Planner de Sonhos - Sistema de Casamentos",
     content: `
-      <h2>WeddingEasy - Finalista DSPI 2025</h2>
+      <h2>Planner de Sonhos - Finalista DSPI 2025</h2>
       <p>Sistema completo de gerenciamento de casamentos com design moderno e interativo.</p>
       <p>Responsável pelo design no Figma, desenvolvimento HTML/CSS e implementação PHP.</p>
       <p>Projeto finalista no DSPI 2025 - Desafio SENAI de Projetos Integradores.</p>
-      <p><strong>Adicione aqui o iframe ou imagens do seu projeto!</strong></p>
-      <div style="background: #f1f5f9; padding: 2rem; border-radius: 0.5rem; margin-top: 1rem;">
-        <p style="text-align: center; color: #64748b;">
-          Espaço reservado para o conteúdo do projeto WeddingEasy<br>
-          Você pode adicionar iframes, imagens ou vídeos aqui
-        </p>
+      <p style="margin-bottom: 1rem;"><strong>Um preview da Landing Page:</strong></p>
+      <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(150, 192, 255, 0.4), 0 0 50px rgba(116, 153, 255, 0.15);">
+        <img src="images/weddingeasy.png" alt="Preview do projeto WeddingEasy">
       </div>
     `,
   },
 }
 
-// Open modal when clicking on project card
 projectCards.forEach((card) => {
   card.addEventListener("click", function () {
     const projectId = this.getAttribute("data-project")
@@ -83,7 +71,6 @@ projectCards.forEach((card) => {
   })
 })
 
-// Close modal
 function closeModal() {
   modal.classList.remove("active")
   document.body.style.overflow = ""
@@ -92,14 +79,12 @@ function closeModal() {
 modalClose.addEventListener("click", closeModal)
 modalOverlay.addEventListener("click", closeModal)
 
-// Close modal with ESC key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.classList.contains("active")) {
     closeModal()
   }
 })
 
-// Tooltip functionality
 const tooltip = document.getElementById("tooltip")
 const resumeItems = document.querySelectorAll(".resume__item[data-tooltip]")
 
@@ -125,7 +110,6 @@ function updateTooltipPosition(e) {
   let left = e.pageX - tooltipWidth / 2
   let top = e.pageY - tooltipHeight - 15
 
-  // Prevent tooltip from going off screen
   if (left < 10) left = 10
   if (left + tooltipWidth > window.innerWidth - 10) {
     left = window.innerWidth - tooltipWidth - 10
@@ -154,7 +138,6 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll
 })
 
-// Animate elements on scroll
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -169,7 +152,6 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe project cards and resume sections
 document.querySelectorAll(".project-card, .resume__section").forEach((el) => {
   el.style.opacity = "0"
   el.style.transform = "translateY(20px)"

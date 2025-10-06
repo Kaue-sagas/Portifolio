@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__content">
@@ -22,7 +21,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero__content">
@@ -40,17 +38,15 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projetos" class="projects">
         <div class="container">
             <h2 class="section__title">Meus Projetos</h2>
             <p class="section__subtitle">Projetos desenvolvidos durante minha jornada de aprendizado</p>
             
             <div class="projects__grid">
-                <!-- Project 1: Pixar -->
                 <article class="project-card" data-project="pixar">
                     <div class="project-card__image">
-                        <img src="images/project-pixar-preview.jpg" alt="Preview do projeto Os Incríveis">
+                        <img src="images/theincredibles.png" alt="Preview do projeto Os Incríveis">
                         <div class="project-card__overlay">
                             <button class="project-card__btn">Ver Projeto</button>
                         </div>
@@ -64,15 +60,13 @@
                         <div class="project-card__tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 2: ScrollUP -->
                 <article class="project-card" data-project="scrollup">
                     <div class="project-card__image">
-                        <img src="images/project-scrollup-preview.jpg" alt="Preview do projeto ScrollUP">
+                        <img src="images/scrollup.png" alt="Preview do projeto ScrollUP">
                         <div class="project-card__overlay">
                             <button class="project-card__btn">Ver Projeto</button>
                         </div>
@@ -82,34 +76,36 @@
                         <p class="project-card__description">
                             Site de estudo para leitura de mangás e webtoons. Foco em aprender 
                             Flexbox, organização de código e criar um design bonito e agradável.
+                            Com sistema de mudança de cor primaria usando o Banner como base.
                         </p>
                         <div class="project-card__tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                             <span class="tag">Flexbox</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 3: WeddingEasy -->
                 <article class="project-card" data-project="weddingeasy">
                     <div class="project-card__image">
-                        <img src="images/project-wedding-preview.jpg" alt="Preview do projeto WeddingEasy">
+                        <img src="images/weddingeasy.png" alt="Preview do projeto WeddingEasy">
                         <div class="project-card__overlay">
                             <button class="project-card__btn">Ver Projeto</button>
                         </div>
                     </div>
                     <div class="project-card__content">
-                        <h3 class="project-card__title">WeddingEasy - Finalista DSPI 2025</h3>
+                        <h3 class="project-card__title">Planner de Sonhos - Finalista DSPI 2025</h3>
                         <p class="project-card__description">
                             Sistema de gerenciamento de casamentos interativo com design moderno. 
-                            Trabalhei no design, HTML, CSS e PHP. Projeto finalista no DSPI 2025.
+                            Trabalhei no design, HTML, CSS, PHP e Javascript. Projeto finalista no DSPI 2025.
                         </p>
                         <div class="project-card__tags">
                             <span class="tag">PHP</span>
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                             <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                 </article>
@@ -117,14 +113,12 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
     <section id="curriculo" class="resume">
         <div class="container">
             <h2 class="section__title">Currículo</h2>
             <p class="section__subtitle">Passe o mouse sobre os itens para ver mais detalhes</p>
 
             <div class="resume__grid">
-                <!-- Hard Skills -->
                 <div class="resume__section">
                     <h3 class="resume__section-title">Hard Skills</h3>
                     
@@ -201,7 +195,6 @@
                     </div>
                 </div>
 
-                <!-- Soft Skills -->
                 <div class="resume__section">
                     <h3 class="resume__section-title">Soft Skills</h3>
                     
@@ -269,7 +262,6 @@
                     </div>
                 </div>
 
-                <!-- Education & Courses -->
                 <div class="resume__section">
                     <h3 class="resume__section-title">Formação & Cursos</h3>
                     
@@ -334,7 +326,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contato" class="contact">
         <div class="container">
             <h2 class="section__title">Entre em Contato</h2>
@@ -359,20 +350,17 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p class="footer__text">&copy; 2025 Kauê Feltrin Sagas. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Project Modal -->
     <div class="modal" id="projectModal">
         <div class="modal__overlay"></div>
         <div class="modal__content">
             <button class="modal__close">&times;</button>
             <div class="modal__body">
-                <!-- O conteúdo do projeto será inserido aqui via JavaScript -->
                 <div id="projectContent">
                     <p class="modal__placeholder">Adicione o conteúdo do seu projeto aqui</p>
                 </div>
@@ -380,7 +368,6 @@
         </div>
     </div>
 
-    <!-- Tooltip -->
     <div class="tooltip" id="tooltip"></div>
 
     <script src="scripts/main.js"></script>
