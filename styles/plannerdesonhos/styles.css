@@ -25,20 +25,19 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);        /* color of the tracking area */
+  background: rgba(255, 255, 255, 0);  
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #e1bee7;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 1px solid #ffffff;  /* creates padding around scroll thumb */
+  background-color: #e1bee7;
+  border-radius: 20px;
+  border: 1px solid #ffffff; 
 }
 
 .checkbox {
   accent-color: hsl(var(--primary));
 }
 
-/* Utility classes */
 .bg-primary {
   background-color: hsl(var(--primary));
 }
@@ -83,7 +82,6 @@
   background-color: hsl(var(--accent));
 }
 
-/* Reset e Base */
 * {
   margin: 0;
   padding: 0;
@@ -112,7 +110,6 @@ body {
   padding: 0 1rem;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -126,7 +123,6 @@ p {
   cursor: default;
 }
 
-/* Buttons */
 .btn-primary {
   background-color: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
@@ -220,7 +216,6 @@ p {
   transform: translateY(-4px);
 }
 
-/* Mobile menu */
 .mobile-menu {
   max-height: 0;
   overflow: hidden;
@@ -257,7 +252,6 @@ p {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -336,7 +330,6 @@ p {
   cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
   padding-top: 5rem;
   padding-bottom: 4rem;
@@ -431,7 +424,6 @@ p {
   color: hsl(var(--primary));
 }
 
-/* Hero Visual */
 .hero-visual {
   position: relative;
   animation: slideInFromRight 1s ease-out 0.3s both;
@@ -546,7 +538,6 @@ p {
   color: hsl(var(--muted-foreground));
 }
 
-/* Stats Section */
 .stats {
   padding: 5rem 1rem;
   background: hsl(var(--background));
@@ -628,7 +619,6 @@ p {
   color: hsl(var(--muted-foreground));
 }
 
-/* Features Section */
 .features {
   padding: 5rem 1rem;
   background: hsl(var(--background));
@@ -745,7 +735,6 @@ p {
   z-index: 10;
 }
 
-/* CTA Section */
 .cta {
   padding: 5rem 1rem;
   background: linear-gradient(135deg,
@@ -778,7 +767,6 @@ p {
   margin-right: auto;
 }
 
-/* Footer */
 .footer {
   background: hsl(var(--card));
   border-top: 1px solid hsl(var(--border));
@@ -892,7 +880,6 @@ p {
   color: hsl(var(--primary));
 }
 
-/* Page Content */
 .page-content {
   padding: 5rem 1rem;
 }
@@ -917,7 +904,6 @@ p {
   margin: 0 auto;
 }
 
-/* Dropdown Menu */
 .dropdown {
   position: relative;
 }
@@ -956,7 +942,6 @@ p {
   display: flex;
 }
 
-/* Features Detailed */
 .features-detailed-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1022,7 +1007,6 @@ p {
   flex-shrink: 0;
 }
 
-/* Features CTA */
 .features-cta {
   background: linear-gradient(135deg, white 0%, hsl(var(--secondary)) 100%);
   border-radius: 1rem;
@@ -1065,7 +1049,6 @@ p {
   color: hsl(var(--foreground));
 }
 
-/* Modules */
 .modules-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1202,7 +1185,6 @@ p {
   color: white;
 }
 
-/* Contact */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1398,7 +1380,6 @@ p {
   }
 }
 
-/* Calendar Page */
 .calendar-page {
   padding: 2rem 1rem;
 }
@@ -1882,7 +1863,6 @@ p {
   color: #374151;
 }
 
-/* Financial Dashboard */
 .financial-dashboard {
   display: grid;
   grid-template-columns: 1fr;
@@ -1980,7 +1960,6 @@ p {
   color: #ef4444;
 }
 
-/* Financial Features Grid */
 .financial-features-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -2068,7 +2047,6 @@ p {
   flex-shrink: 0;
 }
 
-/* Reports Showcase */
 .reports-showcase {
   margin-top: 2rem;
 }
@@ -2132,7 +2110,6 @@ p {
   line-height: 1.5;
 }
 
-/* Categories Showcase */
 .categories-showcase {
   margin-top: 2rem;
 }
@@ -2185,7 +2162,6 @@ p {
   color: hsl(var(--primary));
 }
 
-/* Payments Showcase */
 .payments-showcase {
   margin-top: 2rem;
 }
@@ -2258,7 +2234,6 @@ p {
   color: hsl(var(--foreground));
 }
 
-/* Responsive adjustments for financial components */
 @media (max-width: 768px) {
   .financial-dashboard {
     grid-template-columns: 1fr;
@@ -2293,7 +2268,6 @@ p {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -2388,7 +2362,6 @@ p {
   }
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -2623,7 +2596,6 @@ p {
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Print Styles */
 @media print {
 
   .header,
@@ -2650,12 +2622,10 @@ a {
   cursor: pointer;
 }
 
-/* Animações específicas para pulse existente */
 [style*="animation: pulse"] {
   animation: heartbeat 2s ease-in-out infinite !important;
 }
 
-/* Melhorias nas transições existentes */
 .card,
 .feature-card,
 .financial-card,
@@ -2668,9 +2638,6 @@ a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Adicionando animações CSS avançadas para todas as páginas */
-
-/* Animações de entrada avançadas */
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
@@ -2858,9 +2825,6 @@ a {
   }
 }
 
-/* Aplicando animações aos elementos das páginas */
-
-/* Animações para títulos de páginas */
 .page-title {
   animation: slideInFromTop 1s ease-out;
   position: relative;
@@ -2888,7 +2852,6 @@ a {
   }
 }
 
-/* Animações para cards de funcionalidades detalhadas */
 .feature-detailed-card {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -2929,7 +2892,6 @@ a {
   animation: morphing 3s ease-in-out infinite;
 }
 
-/* Animações para ícones de funcionalidades */
 .feature-icon {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2962,7 +2924,6 @@ a {
   animation: zoomIn 0.5s ease-out;
 }
 
-/* Animações para formulários de contato */
 .contact-form-card {
   animation: slideInFromLeft 1s ease-out;
 }
@@ -3006,7 +2967,6 @@ a {
   animation: glow 0.5s ease-out, breathe 5s ease-in-out infinite;
 }
 
-/* Animações para elementos de contato */
 .contact-detail {
   animation: slideInFromLeft 0.8s ease-out;
   animation-fill-mode: both;
@@ -3037,7 +2997,6 @@ a {
   margin: -0.5rem;
 }
 
-/* Animações para FAQ */
 .faq-item {
   animation: slideInFromBottom 0.6s ease-out;
   animation-fill-mode: both;
@@ -3064,7 +3023,6 @@ a {
   transform: translateX(5px);
 }
 
-/* Animações para botões CTA */
 .cta-buttons .btn {
   animation: slideInFromBottom 0.8s ease-out;
   animation-fill-mode: both;
@@ -3098,7 +3056,6 @@ a {
   height: 300px;
 }
 
-/* Animações para calendário */
 .calendar-day {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -3140,7 +3097,6 @@ a {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Animações para elementos financeiros */
 .financial-card {
   animation: zoomIn 0.8s ease-out;
   animation-fill-mode: both;
@@ -3183,7 +3139,6 @@ a {
   animation: heartbeat 2s ease-in-out infinite;
 }
 
-/* Animações para benefícios */
 .benefit-item {
   animation: slideInDiagonal 0.8s ease-out;
   animation-fill-mode: both;
@@ -3214,7 +3169,6 @@ a {
   animation: colorShift 2s ease-in-out infinite;
 }
 
-/* Animações para módulos */
 .module-card {
   animation: flipInX 0.8s ease-out;
   animation-fill-mode: both;
@@ -3244,7 +3198,6 @@ a {
   animation: rotate 1s ease-in-out;
 }
 
-/* Animações para elementos de navegação */
 .nav-link {
   position: relative;
   transition: all 0.3s ease;
@@ -3266,7 +3219,6 @@ a {
   transform: translateX(5px);
 }
 
-/* Animações para elementos de timeline */
 .timeline-item {
   animation: slideInFromLeft 0.6s ease-out;
   animation-fill-mode: both;
@@ -3288,7 +3240,6 @@ a {
   animation: heartbeat 2s ease-in-out infinite;
 }
 
-/* Animações para ações rápidas */
 .quick-action {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -3306,7 +3257,6 @@ a {
   animation: bounce 0.6s ease-out;
 }
 
-/* Animações para estatísticas */
 .stat-item {
   animation: zoomIn 0.8s ease-out;
   animation-fill-mode: both;
@@ -3328,7 +3278,6 @@ a {
   animation-delay: 0.4s;
 }
 
-/* Animações para elementos de categoria */
 .category-item {
   animation: slideInFromBottom 0.6s ease-out;
   animation-fill-mode: both;
@@ -3354,7 +3303,6 @@ a {
   animation: elasticScale 0.6s ease-out;
 }
 
-/* Animações para relatórios */
 .report-item {
   animation: slideInFromRight 0.6s ease-out;
   animation-fill-mode: both;
@@ -3376,7 +3324,6 @@ a {
   animation: wiggle 0.8s ease-out;
 }
 
-/* Animações responsivas e otimizações */
 @media (prefers-reduced-motion: reduce) {
 
   *,
@@ -3388,7 +3335,6 @@ a {
   }
 }
 
-/* Otimizações para dispositivos móveis */
 @media (max-width: 768px) {
 
   .feature-detailed-card:hover,
@@ -3406,7 +3352,6 @@ a {
   }
 }
 
-/* Animações de loading para elementos que carregam dinamicamente */
 .loading-shimmer {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
@@ -3456,7 +3401,6 @@ a {
 .calendar-day-modal,
 .view-events-modal {
   display: none;
-  /* escondido por padrão */
   position: fixed;
   top: 0;
   left: 0;
@@ -3464,9 +3408,7 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   justify-content: center;
-  /* centraliza */
   align-items: center;
-  /* centraliza */
   z-index: 1000;
 }
 

@@ -12,13 +12,13 @@ a{
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);        /* color of the tracking area */
+  background: rgba(255, 255, 255, 0);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #5e5e5e;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #0a0b0f;  /* creates padding around scroll thumb */
+  background-color: #5e5e5e;
+  border-radius: 20px;
+  border: 3px solid #0a0b0f;
 }
 
 body {
@@ -38,7 +38,6 @@ body {
   align-items: center;
 }
 
-/* Header Styles */
 .header {
   background-color: #27272a;
   width: 100%;
@@ -118,7 +117,6 @@ body {
   object-fit: contain;
 }
 
-/* Hero Section */
 .hero-section {
   position: relative;
   width: 100%;
@@ -214,7 +212,6 @@ body {
   top: 201px;
 }
 
-/* Cash Back Section */
 .cashback-section {
   position: relative;
   background-color: var(--cor-dinamica);
@@ -309,7 +306,6 @@ body {
   font-weight: var(--peso-texto-dinamica, normal);
 }
 
-/* Section Headers */
 .section-header {
   height: 100px;
   width: 90%;
@@ -382,7 +378,6 @@ body {
   transition: all 0.2s ease;
 }
 
-/* Product Grids */
 .product-grid {
   display: grid;
   width: 90%;
@@ -406,7 +401,6 @@ body {
   display: none;
 }
 
-/* Product Cards */
 .product-card {
   position: relative;
   height: 446px;
@@ -526,7 +520,6 @@ body {
   text-align: center;
 }
 
-/* More Button */
 .more-button {
   height: 48px;
   margin: 50px auto;
@@ -571,7 +564,6 @@ body {
   top: 10px;
 }
 
-/* Footer */
 .footer {
   display: flex;
   flex-direction: column;

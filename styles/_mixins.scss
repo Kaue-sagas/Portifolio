@@ -1,4 +1,3 @@
-// Responsive breakpoints
 @mixin respond-to($breakpoint) {
   @if $breakpoint == 'sm' {
     @media (min-width: $breakpoint-sm) { @content; }
@@ -14,14 +13,12 @@
   }
 }
 
-// Flexbox center
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-// Absolute center
 @mixin absolute-center {
   position: absolute;
   top: 50%;
@@ -29,7 +26,6 @@
   transform: translate(-50%, -50%);
 }
 
-// Container
 @mixin container {
   width: 100%;
   max-width: $breakpoint-xl;
@@ -41,7 +37,6 @@
   }
 }
 
-// Button reset
 @mixin button-reset {
   background: none;
   border: none;
@@ -50,14 +45,12 @@
   font-family: inherit;
 }
 
-// Truncate text
 @mixin truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-// Line clamp
 @mixin line-clamp($lines) {
   display: -webkit-box;
   -webkit-line-clamp: $lines;

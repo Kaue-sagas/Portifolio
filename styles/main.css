@@ -13,13 +13,13 @@ html {
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);        /* color of the tracking area */
+  background: rgba(255, 255, 255, 0);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #303a63;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #0a0b0f;  /* creates padding around scroll thumb */
+  background-color: #303a63; 
+  border-radius: 20px;       
+  border: 3px solid #0a0b0f; 
 }
 
 body {
@@ -753,4 +753,4 @@ button {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #161b25;
-}/*# sourceMappingURL=main.css.map */
+}
