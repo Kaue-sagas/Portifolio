@@ -24,11 +24,33 @@ const projectData = {
       <h2>Os Incríveis - Site de Estudo</h2>
       <p>Este foi meu segundo site, onde aprendi muito sobre desenvolvimento web.</p>
       <p>Criei um sistema de login diferente usando arquivo TXT, pois ainda não tinha conhecimento de back-end.</p>
-      <p style="margin-bottom: 1rem;"><strong>Um preview da Landing Page:</strong></p>
-      <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.15);">
-        <img src="images/theincredibles_light.png" alt="Preview do projeto Os Incríveis">
+      <p style="margin-bottom: 1rem;"><strong>Um preview interativo do site:</strong></p>
+
+      <div style="
+        border-radius: 0.5rem; 
+        overflow: hidden; 
+        position: relative; 
+        width: 100%; 
+        height: 500px; 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6),
+                    0 10px 10px -5px rgba(0, 0, 0, 0.4),
+                    0 0 25px rgba(255, 255, 255, 0.4),
+                    0 0 50px rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+      ">
+        <iframe 
+          src="../site/incriveis/TheIncredibles.html" 
+          width="100%" 
+          height="100%" 
+          style="
+            border:none;
+            transform: scale(0.6);
+            transform-origin: top left;
+            width: 167%;
+            height: 167%;
+          "
+        ></iframe>
       </div>
-      
     `,
   },
   scrollup: {
@@ -36,10 +58,31 @@ const projectData = {
     content: `
       <h2>ScrollUP - Plataforma de Leitura</h2>
       <p>Site desenvolvido para estudo de leitura de mangás e webtoons.</p>
-      <p>Foco principal em aprender Flexbox e variaveis, organização de código e criar interfaces agradáveis.</p>
-      <p style="margin-bottom: 1rem;"><strong>Um preview da Landing Page:</strong></p>
-      <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(150, 192, 255, 0.4), 0 0 50px rgba(116, 153, 255, 0.15);">
-        <img src="images/scrollup.png" alt="Preview do projeto ScrollUp">
+      <p>Foco principal em aprender Flexbox, variáveis, organização de código e criar interfaces agradáveis.</p>
+      <p style="margin-bottom: 1rem;"><strong>Um preview interativo da Landing Page:</strong></p>
+  
+      <div style="
+        border-radius: 0.5rem; 
+        overflow: hidden; 
+        position: relative; 
+        width: 100%; 
+        height: 600px; 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 
+                    0 10px 10px -5px rgba(0, 0, 0, 0.4), 
+                    0 0 25px rgba(150, 192, 255, 0.4), 
+                    0 0 50px rgba(116, 153, 255, 0.15);
+      ">
+        <iframe 
+          src="site/scrollup/index.html"
+          style="
+            border:none;
+            transform: scale(0.6);
+            transform-origin: top left;
+            width: 167%;
+            height: 167%;
+          "
+          allowfullscreen
+        ></iframe>
       </div>
     `,
   },
@@ -51,8 +94,29 @@ const projectData = {
       <p>Responsável pelo design no Figma, desenvolvimento HTML/CSS e implementação PHP.</p>
       <p>Projeto finalista no DSPI 2025 - Desafio SENAI de Projetos Integradores.</p>
       <p style="margin-bottom: 1rem;"><strong>Um preview da Landing Page:</strong></p>
-      <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 25px rgba(150, 192, 255, 0.4), 0 0 50px rgba(116, 153, 255, 0.15);">
-        <img src="images/weddingeasy.png" alt="Preview do projeto WeddingEasy">
+
+      <div style="
+        border-radius: 0.5rem; 
+        overflow: hidden; 
+        position: relative; 
+        width: 100%; 
+        height: 600px; 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 
+                    0 10px 10px -5px rgba(0, 0, 0, 0.4), 
+                    0 0 25px rgba(150, 192, 255, 0.4), 
+                    0 0 50px rgba(116, 153, 255, 0.15);
+      ">
+        <iframe 
+          src="site/plannerdesonhos/index.html"
+          style="
+            border:none;
+            transform: scale(0.6);
+            transform-origin: top left;
+            width: 167%;
+            height: 167%;
+          "
+          allowfullscreen
+        ></iframe>
       </div>
     `,
   },
