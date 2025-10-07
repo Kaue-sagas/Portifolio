@@ -38,7 +38,7 @@ const projectData = {
                     0 0 50px rgba(116, 153, 255, 0.15);
       ">
         <iframe 
-          src="site/incriveis/index.html"
+          src="/site/incriveis/index.html"
           style="
             border:none;
             transform: scale(0.6);
