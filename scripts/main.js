@@ -31,17 +31,14 @@ const projectData = {
         overflow: hidden; 
         position: relative; 
         width: 100%; 
-        height: 500px; 
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6),
-                    0 10px 10px -5px rgba(0, 0, 0, 0.4),
-                    0 0 25px rgba(255, 255, 255, 0.4),
-                    0 0 50px rgba(255, 255, 255, 0.15);
-        overflow: hidden;
+        height: 600px; 
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 
+                    0 10px 10px -5px rgba(0, 0, 0, 0.4), 
+                    0 0 25px rgba(150, 192, 255, 0.4), 
+                    0 0 50px rgba(116, 153, 255, 0.15);
       ">
         <iframe 
-          src="../site/incriveis/TheIncredibles.html" 
-          width="100%" 
-          height="100%" 
+          src="site/incriveis/index.html"
           style="
             border:none;
             transform: scale(0.6);
@@ -49,6 +46,7 @@ const projectData = {
             width: 167%;
             height: 167%;
           "
+          allowfullscreen
         ></iframe>
       </div>
     `,
