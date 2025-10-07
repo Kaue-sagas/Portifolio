@@ -37,7 +37,7 @@ const projectData = {
                     0 0 25px rgba(150, 192, 255, 0.4), 
                     0 0 50px rgba(116, 153, 255, 0.15);
       ">
-         <img src="../images/theincredibles_light.png" alt="preview dos Incríveis">
+         <img src="images/theincredibles.png" alt="preview dos Incríveis">
       </div>
     `,
   },
