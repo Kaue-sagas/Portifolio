@@ -37,17 +37,7 @@ const projectData = {
                     0 0 25px rgba(150, 192, 255, 0.4), 
                     0 0 50px rgba(116, 153, 255, 0.15);
       ">
-        <iframe 
-          src="/site/incriveis/index.html"
-          style="
-            border:none;
-            transform: scale(0.6);
-            transform-origin: top left;
-            width: 167%;
-            height: 167%;
-          "
-          allowfullscreen
-        ></iframe>
+         <img src="/images/Theincredibles_light.png" alt="preview dos Incríveis">
       </div>
     `,
   },
